@@ -18,11 +18,19 @@
   
   @keyframes move{
     0% {
-        background-position: 0% 2,5%;
+        background-position: 0% 2.5%;
     }
 
-    50% {
-        background-position: 5% 0%;
+    33% {
+        background-position: 2.5% 5%;
+    }
+
+    66% {
+      background-position: 5% 2.5%;
+    }
+
+    100% {
+      background-position: 2.5% 0%;
     }
  
 }
