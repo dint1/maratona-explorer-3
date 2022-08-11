@@ -6,10 +6,28 @@
   }
   
   body {
-    background-color: #FFEDD5;
+    background-image: linear-gradient(to top, transparent -5%,#D7B19D, #C68B59, #865439, #773f2c 90%), url(img/coffee.gif);
+    background-size: 120%;
+    background-position: 0%;
     font-family: 'Roboto', sans-serif;
+    animation: move 12s ease infinite;
+    margin-bottom: 82px;
   }
+
+  /*ANIMAÇÃO DO BACKGROUND GRADIENTE*/
   
+  @keyframes move{
+    0% {
+        background-position: 0% 2,5%;
+    }
+
+    50% {
+        background-position: 5% 0%;
+    }
+ 
+}
+
+
   ul {
     list-style: none;
   }
@@ -18,7 +36,8 @@
   h1, h2, h3, .price {
     font-family: 'Roboto Serif', serif;
     text-transform: uppercase;
-    color: #2D2C2A;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
   }
   
   /*HEADER*/
@@ -47,7 +66,7 @@
     font-size: 14px;
     line-height: 16px;
     color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 3px 3px;
+    text-shadow: 0.5px 1px 1px #fff;
   
   }
   
@@ -74,7 +93,7 @@
   }
   
   li .details {
-    max-width: 240px;
+    max-width: 440px;
   }
   
   .details h3 {
